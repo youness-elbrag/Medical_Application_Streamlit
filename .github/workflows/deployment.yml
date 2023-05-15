@@ -90,5 +90,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/deep-matter/rest_apis_django:latset
+          tags: ghcr.io/deep-matter/streamlit:latset
           labels: 'latset'
