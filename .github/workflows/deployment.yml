@@ -2,9 +2,9 @@ name: CI/CD intergration Streamlit Application
 # Trigger type used in actions PUSH
 on:
   push:
-    branches: ["master"]
+    branches: ["dockrize"]
   pull_request: 
-    branches: ["master"]
+    branches: ["dockrize"]
 
 env:
   REGISTRY: ghcr.io
