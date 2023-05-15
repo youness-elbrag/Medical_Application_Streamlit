@@ -6,12 +6,13 @@ import base64
 import streamlit as st
 
 
-@st.cache(allow_output_mutation=True)
+@st.cache_data
 def get_base64(bin_file):
     with open(bin_file, 'rb') as f:
         data = f.read()
     return base64.b64encode(data).decode()
 
+@st.cache_data
 def set_bg(png_file):
     bin_str = get_base64(png_file)
     page_bg_img = """
@@ -23,7 +24,7 @@ def set_bg(png_file):
         </style>
     """ % bin_str
     st.markdown(page_bg_img, unsafe_allow_html=True)  
-     
+@st.cache_data    
 def get_img_array(img_path, size):
     # `img` is a PIL image of size 64x64
     #img =image.load_img(img_path, target_size=(size,size,3))
@@ -37,6 +38,7 @@ def get_img_array(img_path, size):
     #img=img.reshape(1,size,size,3)
     return img
 
+@st.cache_data
 def load_cnn_model(model_path):
     model = load_model(model_path)
     return model
@@ -50,6 +52,8 @@ Sitution_Medical={'Normal':' you are healthy no probelm adressed in your situtio
 }    
 
 classes= ['jaundice','normal','pink','stye','uveitis']
+
+@st.cache_data
 def make_prediction(output,proba):    
     for j in range(1):
         if classes[output[j]] == classes[0]:

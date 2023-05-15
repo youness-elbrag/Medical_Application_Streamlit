@@ -1,0 +1,4 @@
+libgl1-mesa-glx
+libgl1
+libxext6
+libfontconfig1

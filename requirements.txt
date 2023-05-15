@@ -1,8 +1,7 @@
 streamlit
 glob2
-panads
+pandas
 numpy 
 tensorflow_cpu
-base64
-opencv-python
-
+pybase64
+opencv-python-headless 

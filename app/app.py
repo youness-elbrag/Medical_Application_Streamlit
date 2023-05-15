@@ -22,7 +22,7 @@ components.html(
     """
 )
 
-set_bg('./img/background.jpg') 
+set_bg('img/background.jpg') 
 
 ###########################
 # 👇      CODE        👇 #
@@ -37,13 +37,13 @@ row1_1, row1_2 = st.columns((2,2))
 #####################################
 # 👇      Load the modol wieghts         👇 #
 #####################################
-model_path="./model/Cnn_detector.h5"
+model_path="model/Cnn_detector.h5"
 IMAGE_SIZE = 32
 save_input_img="./predicted_imges"
 ######################################
 
 with row1_1:
-    st.image('./img/eye_logo.png', width=200)
+    st.image('img/eye_logo.png', width=200)
     st.markdown("""
         ##
         """)
@@ -82,7 +82,7 @@ with row1_1:
 
 with row1_2:
     if uploaded_file is None:
-        st.image('./img/bg-img.gif')
+        st.image('img/bg-img.gif')
         #st.write('Waiting for your upload')
         st.markdown('''
             #
@@ -94,7 +94,7 @@ with row1_2:
         #st.image('img/gif-to-jpeg.jpg')
         
     if  uploaded_file is not None:
-        #st.image('./img/bg-img.gif')
+        #st.image('img/bg-img.gif')
         #st.write('Waiting for your upload')
         st.markdown("""---""")
         st.markdown('''

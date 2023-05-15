@@ -1,0 +1,18 @@
+version: "3.9"
+
+# Define the Argments services APP to run
+
+services:
+  app:
+    container_name: Streamlit
+    build:
+      context: .
+      args:
+        - DEV=true
+    ports: 
+      - "8000:8000"
+    volumes:
+      - ./app:/app
+    restart: always 
+    command: >
+      sh -c "streamlit run app.py --server.port=8000 --server.address=0.0.0.0"
