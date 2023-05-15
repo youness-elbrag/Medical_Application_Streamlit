@@ -21,7 +21,11 @@ jobs:
         name: checking repo code 
         uses: actions/checkout@v3
       -
+<<<<<<< HEAD
         name: running Unite test 
+=======
+        name: running Builiding Container 
+>>>>>>> refs/remotes/origin/dockrize
         run: |
           docker-compose run --rm -p 8000:8000 app sh -c "exit"
           echo "Application Run Test Passed"
