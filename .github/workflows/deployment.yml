@@ -2,9 +2,9 @@ name: CI/CD intergration Streamlit Application
 # Trigger type used in actions PUSH
 on:
   push:
-    branches: ["dockrize"]
+    branches: ["master"]
   pull_request: 
-    branches: ["dockrize"]
+    branches: ["master"]
 
 env:
   REGISTRY: ghcr.io
@@ -21,11 +21,7 @@ jobs:
         name: checking repo code 
         uses: actions/checkout@v3
       -
-<<<<<<< HEAD
-        name: running Unite test 
-=======
-        name: running Builiding Container 
->>>>>>> refs/remotes/origin/dockrize
+        name: running Builiding Container
         run: |
           docker-compose run --rm -p 8000:8000 app sh -c "exit"
           echo "Application Run Test Passed"
