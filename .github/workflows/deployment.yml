@@ -21,11 +21,7 @@ jobs:
         name: checking repo code 
         uses: actions/checkout@v3
       -
-<<<<<<< HEAD
-        name: running Unite test 
-=======
-        name: running Builiding Container 
->>>>>>> refs/remotes/origin/dockrize
+        name: running Builiding Container
         run: |
           docker-compose run --rm -p 8000:8000 app sh -c "exit"
           echo "Application Run Test Passed"
@@ -59,7 +55,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: younessbg/Streamlit:latset
+          tags: younessbg/streamlit:latset
           secrets: |
             GIT_AUTH_TOKEN= ${{ secrets.GIT_AUTH }}
 
