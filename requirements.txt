@@ -1,0 +1,8 @@
+streamlit
+glob2
+panads
+numpy 
+tensorflow_cpu
+base64
+opencv-python
+
