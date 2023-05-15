@@ -9,6 +9,7 @@ __pycache__/
 # Distribution / packaging
 .Python
 build/
+Scraping/Detecting Signs of Disease from External Images of the Eye.ipynb
 .vscode/
 develop-eggs/
 dist/
