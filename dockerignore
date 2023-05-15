@@ -1,0 +1,11 @@
+git 
+.gitignore
+#docker
+.docker 
+.secrets_AUTH_GIT.txt
+
+#python
+app/__pycache__/
+app/*/__pycache__/
+app/*/*/__pycache__/
+app/*/*/*/__pycache__/

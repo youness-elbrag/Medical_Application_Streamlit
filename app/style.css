@@ -1,0 +1,84 @@
+body {
+    background-color: #FFBF10;
+    background-size: cover;
+}
+h1 {
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.footer {
+    display: none !important;
+}
+.css-1y0tads {
+    flex: 1 1 0%;
+    width: 100%;
+    padding: 5rem 5rem 0rem !important;
+}
+.stProgress .st-bo {
+    background-color: #ffffff !important;
+}
+.st-bq {
+    background-color: #000000 !important;
+}
+.css-2trqyj {
+    color: black;
+}
+/* #MainMenu {
+    visibility: hidden;
+} */
+.css-a0ecc6 {
+    padding-right: 45px;
+}
+.stButton {
+    text-align: center;
+}
+.stButton > .css-2trqyj {
+    color: #ffc001;
+    background-color: white;
+    border-color: #ffc001;
+    border: 2px solid;
+    margin-top: 15px;
+}
+.css-4esp1m {
+    padding-left: 3rem;
+}
+.css-j8zjtb {
+    margin-top: -15px;
+    padding-left: 1rem;
+}
+.css-z8kais > stMarkdown > p {
+    position: absolute;
+    font-size: 10px;
+    bottom: -8rem;
+    margin-left: 41%;
+}
+.element-container > iframe  p {
+    font-size: 12px;
+    text-align: center;
+    font-family: 'IBM Plex Sans';
+}
+.iframe {
+    position: fixed;
+    bottom: 0;
+}
+.css-1o4i7as {
+    height: 170px;
+}
+.css-9eqr5v {
+    display: none;
+}
+.css-tsy3mu:nth-last-child {
+    margin-left: 3rem;
+    margin-top: 1rem;
+}
+.stProgress {
+    padding-left: 15px;
+    padding-right: 35%;
+}
+.css-a0ecc6 > div > .element-container:nth-child(5) > .css-tsy3mu {
+    margin-top: -4.9em;
+    width: 100px !important;
+    pointer-events:none;
+}
