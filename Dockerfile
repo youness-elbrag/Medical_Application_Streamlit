@@ -6,6 +6,8 @@ COPY packages.txt /app/packages.txt
 
 WORKDIR /app
 
+# RUN mkdir predictedSamples
+
 RUN apt-get update && \
     if [ $DEV = "true" ]; \
         then xargs -a packages.txt apt-get install -y  \

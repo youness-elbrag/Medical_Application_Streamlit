@@ -37,9 +37,9 @@ row1_1, row1_2 = st.columns((2,2))
 #####################################
 # 👇      Load the modol wieghts         👇 #
 #####################################
-model_path="model/Cnn_detector.h5"
+model_path="Models/Cnn_detector.h5"
 IMAGE_SIZE = 32
-save_input_img="./predicted_imges"
+save_input_img="predictedSamples/"
 ######################################
 
 with row1_1:
