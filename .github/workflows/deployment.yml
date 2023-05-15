@@ -21,9 +21,10 @@ jobs:
         name: checking repo code 
         uses: actions/checkout@v3
       -
-        name: running Unite test 
-        run: docker-compose run --rm -p 8000:8000 app sh -c "exit " && \
-             echo "Application Run Test Passed"
+        name: running Builiding Container 
+        run: |
+          docker-compose run --rm -p 8000:8000 app sh -c "exit"
+          echo "Application Run Test Passed"
 # in this Job building Docker image and push into docker-hub with GIT_AUTH_TOKEN to secure repo access
 # this job will be depends on building-django-app 
   Docker-Setup:
