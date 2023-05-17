@@ -16,7 +16,7 @@ to run the Docker images following command :
 
 here we used Convolution Neual network to develope a model for predicting the signs of patient based on the Eyes from Images the code can found in Colab 
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1o7USeyjTLjmgjjGXkQLt96HYNAbc_r7j]
+[![Open Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1o7USeyjTLjmgjjGXkQLt96HYNAbc_r7j)
 
 ### Docker-Compose 
 
