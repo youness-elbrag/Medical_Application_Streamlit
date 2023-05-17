@@ -27,7 +27,7 @@ also you can run app using docker-compose command follwing you need to keep dock
 InterFace Application : 
 
 <div align="center">
-    <img src="logo.png" width="500" height="500"/>
+    <img src="logo.png" width="800" height="500"/>
 </div>
 
 
